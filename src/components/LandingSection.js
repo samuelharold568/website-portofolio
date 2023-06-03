@@ -1,6 +1,5 @@
 import React from "react";
 import { Stack, Image, Button, Spacer, Avatar, Heading, VStack, Center, Box, Flex } from "@chakra-ui/react";
-/* import { Button } from '@react-email/button'; */
 import FullScreenSection from "./FullScreenSection";
 
 const carousal = [
@@ -44,9 +43,8 @@ const bio1 = "A frontend developer";
 const bio2 = "specialised in React";
 
 const LandingSection = () => {
-  const handleClick = () => () => {
-    const email = 'samuelharold327@gmail.com';
-    window.location.href = `mailto:${email}`;
+  const handleClick = () => {
+    window.location.href = "mailto:samuelharold327@gmail.com";
   };
 
   return (
