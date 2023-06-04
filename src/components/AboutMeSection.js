@@ -6,9 +6,13 @@ import {
   Heading, 
   Button,
   Image,
-  Tooltip
+  Tooltip,
+  Link,
+  Box
 } from "@chakra-ui/react";
 import pdf from '../images/download-pdf.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const AboutMeSection = () => {
   const handleDownload = () => {
@@ -48,11 +52,31 @@ const AboutMeSection = () => {
       </section>
       <section>
         <Heading as='h3' mb={4} color='#FAF8F1'>Course</Heading>
-        <UnorderedList  color='#D6E4E5'>
-          <ListItem>Dicoding | Front-end Developer</ListItem>
-          <ListItem>Meta | React Advanced Course</ListItem>
-          <ListItem>Codecademy | Front-end Developer</ListItem>
-          <ListItem>John Hopkins University | JavaScript for web Developer</ListItem>
+        <UnorderedList spacing={2} color='#D6E4E5'>
+          <ListItem>
+            <Link href="https://www.dicoding.com/certificates/NVP792O3OZR0">Dicoding | Front-end Developer</Link>
+            <Box as='span' ml='2' color='yellow.600' fontSize='sm'>
+              <FontAwesomeIcon icon={faLink}/>
+            </Box>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.coursera.org/account/accomplishments/verify/754EP7DAE9K5">Meta | React Advanced Course</Link>
+            <Box as='span' ml='2' color='yellow.600' fontSize='sm'>
+              <FontAwesomeIcon icon={faLink}/>
+            </Box>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.codecademy.com/profiles/samuel721/certificates/5f85dd867b67b60014ac9ea3">Codecademy | Front-end Developer</Link>
+            <Box as='span' ml='2' color='yellow.600' fontSize='sm'>
+              <FontAwesomeIcon icon={faLink}/>
+            </Box>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.coursera.org/account/accomplishments/verify/V9QUJWBDWH6U">John Hopkins University | JavaScript for web Developer</Link>
+            <Box as='span' ml='2' color='yellow.600' fontSize='sm'>
+              <FontAwesomeIcon icon={faLink}/>
+            </Box>
+          </ListItem>
         </UnorderedList>
       </section>
       <Tooltip hasArrow label='Download Resume' bg='gray.300' color='black'>
