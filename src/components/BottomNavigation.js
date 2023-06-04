@@ -35,13 +35,13 @@ const BottomNavigation = () => {
           maxWidth="1024px"
           height={16}
         >
-          <nav>
+          <Box as='nav'>
             <HStack spacing={16}>
               <NavLink to="/">HOME</NavLink>
               <NavLink to="/aboutme">ABOUT</NavLink>
               <NavLink to="/project">PROJECTS</NavLink>
             </HStack>
-          </nav>
+          </Box>
         </Flex>
       </div>
     </Box>
