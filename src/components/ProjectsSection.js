@@ -32,8 +32,9 @@ const projects = [
     description:
       "The Notes App is a web-based application that functions to write and save notes. I created this project to test my understanding in using React router, state, react hooks, and fetching data from a REST API. It was built using React.js and React Router technologies",
     getImageSrc: () => require("../images/photo03.jpg"),
-    visitApp: "#",
-    viewCode: "#",
+    visitApp: "https://notes-app568.vercel.app/",
+    viewCode: "https://github.com/samuelharold568/fundamental-react",
+    newTab: "_blank",
     level: "BEGINNER",
     color: "blue"
   },
